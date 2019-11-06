@@ -24,6 +24,7 @@ def drawlik(input, gr = TGraph(), color = 8, second = False) :
     canv.Update();
     canv.Modified();
     gr = gROOT.FindObject("Graph").Clone()
+    gr.Sort()
     tf2.Close()
     gROOT.Reset()
     #hist = gDirectory.Get("hist")
