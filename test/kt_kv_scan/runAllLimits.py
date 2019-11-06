@@ -29,9 +29,9 @@ def parseName(card, printout=False):
     toparse = card.split("/")[len(card.split("/"))-1]
     if printout : print ("parsing ", toparse)
     #tag = re.match(r'.*\_([\dpm]+\_[\dpm]+).*\.card\_K7\.(txt|root)', os.path.basename(card))
-    tag = re.match(r'.*kt\_([\dpm]+\_kv\_[\dpm]+)\_K7\.(txt|root)', os.path.basename(card))
+    tag = re.match(r'.*kt\_([\dpm]+\_kv\_[\dpm]+).*\_K7\.(txt|root)', os.path.basename(card))
     #tag = re.match(r'.*kt\_([\dpm]+\_kv\_[\dpm]+)\.(txt|root)', os.path.basename(card))
-    tag2 = re.match(r'.*kt\_([\dpm]+\_kv\_[\dpm]+\_cosa\_[\dpm]+)\_K7\.(txt|root)', os.path.basename(card))
+    tag2 = re.match(r'.*kt\_([\dpm]+\_kv\_[\dpm]+\_cosa\_[\dpm]+).*\_K7\.(txt|root)', os.path.basename(card))
     #ws_datacard_1l_2tau_mvaOutput_final_cosa_kt_1_kv_1p1111_cosa_0p9_K7.root
     # kappa_t=0.90,kappa_V=1.50,r=1,r_others=1
     if tag == None and tag2 == None :
