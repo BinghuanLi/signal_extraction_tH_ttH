@@ -8,7 +8,7 @@ sendToLXBatch   = False ## the mu's result retrieval are not working in condor -
 
 #####################################################################
 ## What to do:
-doWS                    = True ## To do any of the rest you must have ran with this being True once
+doWS                    = False ## To do any of the rest you must have ran with this being True once
 ## but, once it is done one there is no need to loose time repeating it
 doRateAndSignificance   = False
 doLimits                = False
@@ -55,15 +55,15 @@ GOF_submit = False
 
 # 5)
 # OR you do from Combine or from from Havester
-preparePlotCombine  = False
-preparePlotHavester = True
+preparePlotCombine  = True
+preparePlotHavester = False
 doPostFit           = False # if False do Prefit
-plainBins           = True
+plainBins           = False
 
-doYieldsAndPlots = False # will do the prefit and postfit table of yields.
+doYieldsAndPlots = True # will do the prefit and postfit table of yields.
 # If any of the bellow are true it also do prefit and postfit plots
 # You must have ran the respective preparePostFit... before (or put as true as well)
-doPostFitCombine = False # doYieldsAndPlots must be true
+doPostFitCombine = True # doYieldsAndPlots must be true
 doPostFitHavester = False # doYieldsAndPlots must be true
 
 doRatesByLikScan = False
